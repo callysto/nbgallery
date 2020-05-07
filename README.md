@@ -72,4 +72,16 @@ To upload notebooks, you'll need to log in with what you set up with `NBGALLERY_
 
 ## Populating Everything
 
-The scripts included in this repository will guide you to populate your new gallery with notebooks. 
+The scripts included in this repository will guide you to populate your new gallery with notebooks. In principle, you'll just need to change the following lines in `src/upload_path.py`
+
+```python
+desc = []
+tags = []
+
+paths = 'your_path'
+
+bulk_upload('your_email', 'password', paths, tags, desc, titles)
+```
+In this case, `your_path` would be the **top level path** of where your notebooks exist where you want to have the code recursively search, and you'd have to change `your_email` and `password` to your email and password that you set up earlier. 
+
+Finally, you'd need tu update both `desc` and `tags` as arrays of descriptions and tags for each notebook. Descriptions would be a single description in each element of a list, and `tags` is each tag separated by a space as a single string in the list for each notebook. 
