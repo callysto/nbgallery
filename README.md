@@ -65,7 +65,11 @@ To check out the website, you'll need to tunnel in and host it locally which can
 ssh -N -f -L localhost:9000:0.0.0.0:3000 ubuntu@<ip_of_your_instance>
  ```
 
-From there, go to your local web browser, and go to `localhost:9000`. 
+From there, go to your local web browser, and go to `localhost:9000` and checkout your fresh gallery without any notebooks.
 
-To upload notebooks, you'll need to log in with what you set up with `NBGALLERY_ADMIN_EMAIL` and `NBGALLERY_ADMIN_PASSWORD` in earlier steps. But that's it, so far i think notebook uploads have to be done manually ,but i'll add a new comment after I explore a new thing that allegedly automates this process. 
- 
+To upload notebooks, you'll need to log in with what you set up with `NBGALLERY_ADMIN_EMAIL` and `NBGALLERY_ADMIN_PASSWORD` in earlier steps. 
+
+
+## Populating Everything
+
+The scripts included in this repository will guide you to populate your new gallery with notebooks. 
