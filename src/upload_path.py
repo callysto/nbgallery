@@ -8,6 +8,6 @@ titles = None # use the notebook title
 #We might also want to explicitly define wait conditions
 # on a particular element
 
-paths = '/Users/alextennant/Callysto/curriculum-notebooks/'
+paths = 'your_path'
 
-bulk_upload('alex.tennant@cybera.ca', 'password', paths, tags, desc, titles)
+bulk_upload('your_email', 'password', paths, tags, desc, titles)
